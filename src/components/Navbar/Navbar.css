@@ -1,0 +1,51 @@
+.nav-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    height: 55px;
+    box-shadow: 0 0 5px 2px rgb(66, 66, 66);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-title,.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+.logo{
+    font-size: 30px;
+}
+
+.nav-icons-warp i,.logo{
+    margin:0 15px;
+    opacity: 0.8;
+}
+.nav-icons-warp i:hover{
+    color: rgb(64, 101, 224);
+    transition: 1s;
+    opacity: 1;
+}
+@media(max-width: 420px){
+    .nav-title{
+        font-size: xx-large;
+    }
+    .logo{
+        font-size: x-large;
+    }
+    .nav-icons-warp{
+        font-size: small;
+    }
+    .nav-icons-warp i,.logo{
+        margin: 0 7px;
+    }
+}
+
+
+
+
+
