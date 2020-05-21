@@ -2,3 +2,11 @@
     margin-top: 60px;
     width: 100%;
 }
+
+.movies-list{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
