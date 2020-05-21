@@ -11,6 +11,7 @@
     color: white;
     align-items: center;
     cursor: pointer;
+    z-index: 10;
 }
 .nav-title,.logo{
     text-decoration: none;
