@@ -1,0 +1,32 @@
+.form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.field{
+    width: 100%;
+}
+.field input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid orange;
+    padding: 10px;
+    font-size: larger;
+    outline: none;
+}
+
+.search-btn{
+    width: 150px;
+    cursor: pointer;
+    font-size: larger;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-bottom: 1px solid orange;
+}
+.search-icon{
+    margin-right: 15px;
+}
+
+
+
