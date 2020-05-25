@@ -7,18 +7,15 @@ import { connect } from 'react-redux'
 class SearchMovie extends Component{
 
     renderMovies=()=>{
-        if( this.props.movies[0]!==undefined){
-            return this.props.movies[0].map((movie,index)=>{
-                return <div key={index}><MovieCard img={movie.backdrop_path} title={movie.title} id={movie.id}/></div> 
+        if( this.props.movies.length!==0){
+            return this.props.movies.map((movie,index)=>{
+                return <div key={index}><MovieCard img={movie.Poster} title={movie.Title} id={movie.imdbID}/></div> 
             })
-        }else{
-            return <div>empty</div>
         }
     }
 
 
     render(){
-        console.log(this.props.movies[0])
         return(
             <div className='search-movie-container'>
                 <SearchBar/>

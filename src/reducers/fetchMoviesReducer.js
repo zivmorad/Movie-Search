@@ -5,7 +5,7 @@ FETCH_MOVIES
 export default(movies=[],action)=>{
     switch (action.type) {
         case FETCH_MOVIES:
-            return [...movies]=[action.payload]
+            return [...movies]=action.payload
         default:
             return movies
     }

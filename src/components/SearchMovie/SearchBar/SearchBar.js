@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Field,reduxForm} from 'redux-form'
 import {connect} from 'react-redux'
-import {fetchMovies} from '../../../actions'
+import {fetchMovies,fetchMovie} from '../../../actions'
 import './SearchBar.css'
 
 
@@ -31,4 +31,4 @@ const fromWarp= reduxForm({
     form:'searchMovie',
 })(SearchBar);
 
-export default connect(null,{fetchMovies})(fromWarp);
+export default connect(null,{fetchMovies,fetchMovie})(fromWarp);
