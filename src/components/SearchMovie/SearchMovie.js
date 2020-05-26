@@ -4,13 +4,18 @@ import './SearchMovie.css'
 import MovieCard from './MovieCard/MovieCard'
 import { connect } from 'react-redux'
 
+
 class SearchMovie extends Component{
 
     renderMovies=()=>{
-        if( this.props.movies.length!==0){
-            return this.props.movies.map((movie,index)=>{
-                return <div key={index}><MovieCard img={movie.Poster} title={movie.Title} id={movie.imdbID}/></div> 
-            })
+        if(typeof(this.props.movies)==="string"){ //the resulte of the fetch wes undefined
+            return<h1>{this.props.movies}</h1>
+        }else {
+            if( this.props.movies.length!==0){
+                return this.props.movies.map((movie,index)=>{
+                    return <div key={index}><MovieCard img={movie.Poster} title={movie.Title} id={movie.imdbID}/></div> 
+                })
+            }
         }
     }
 
@@ -28,7 +33,8 @@ class SearchMovie extends Component{
 
 const mapStateToProps=state=>{
     return({
-        movies:state.movies
+        movies:state.movies,
+        userInput:state.form
     })
 }
 

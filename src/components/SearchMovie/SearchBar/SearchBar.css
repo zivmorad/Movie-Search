@@ -6,6 +6,15 @@
 .field{
     width: 100%;
 }
+.field span{
+    position: absolute;
+    left: 10px;
+    top: 120px;
+    background: rgb(253, 123, 123);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
 .field input{
     width: 100%;
     border: none;
