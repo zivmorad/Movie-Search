@@ -13,14 +13,15 @@
     cursor: pointer;
     z-index: 10;
 }
-.nav-title,.logo{
+.nav-title{
     text-decoration: none;
     color: white;
     font-size: 40px;
 }
 
 .logo{
-    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
 }
 
 .nav-icons-warp i,.logo{
@@ -32,18 +33,19 @@
     transition: 1s;
     opacity: 1;
 }
-@media(max-width: 420px){
+@media(max-width: 430px){
     .nav-title{
         font-size: xx-large;
-    }
-    .logo{
-        font-size: x-large;
     }
     .nav-icons-warp{
         font-size: small;
     }
     .nav-icons-warp i,.logo{
         margin: 0 7px;
+    }
+    .logo{
+       width: 27px;
+        margin-top: 5px;
     }
 }
 
